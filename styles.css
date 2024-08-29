@@ -18,6 +18,21 @@ body {
     text-shadow: 0 0 10px black;
 }
 
+#logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid transparent;
+    transition: border-color 0.5s, transform 0.5s;
+}
+
+#logo:hover {
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border-image-slice: 1;
+    transform: scale(1.1);
+}
+
 h1 {
     font-size: 48px;
     margin-bottom: 10px;
@@ -39,8 +54,29 @@ button {
     display: inline-flex;
     align-items: center;
     margin: 5px;
+    position: relative;
+    overflow: hidden;
 }
 
 button:hover {
     background-color: #333;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    transform: rotate(-30deg);
+    transition: all 0.5s;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+button:hover::before {
+    transform: rotate(0);
+    opacity: 1;
 }
