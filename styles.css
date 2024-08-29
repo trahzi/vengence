@@ -8,7 +8,10 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: url('https://media0.giphy.com/media/PbOaO2fedzQLm/giphy.gif?cid=6c09b952ol2qoyfo2bbjwd80fduc2ydg8pi7a1qkyrni8tkf&ep=v1_gifs_search&rid=giphy.gif&ct=g') no-repeat center center/cover;
+    background: linear-gradient(to bottom, #000, #555);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
 
 #content {
