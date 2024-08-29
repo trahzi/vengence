@@ -16,7 +16,6 @@ body {
     z-index: 10;
     color: white;
     text-shadow: 0 0 10px black;
-    animation: popUp 1s ease-out forwards;
 }
 
 #logo {
@@ -30,6 +29,8 @@ body {
     object-fit: cover;
     transition: transform 0.5s;
     animation: popUp 1s ease-out forwards;
+    opacity: 0; /* Start hidden for animation */
+    animation-delay: 0.5s; /* Delay for sequential appearance */
 }
 
 #logo::before {
@@ -59,6 +60,8 @@ h1 {
     font-size: 36px;
     margin-bottom: 10px;
     animation: popUp 1s ease-out forwards;
+    opacity: 0; /* Start hidden for animation */
+    animation-delay: 1s; /* Delay for sequential appearance */
 }
 
 h2 {
@@ -66,6 +69,8 @@ h2 {
     margin-bottom: 30px;
     color: gray;
     animation: popUp 1s ease-out forwards;
+    opacity: 0; /* Start hidden for animation */
+    animation-delay: 1.5s; /* Delay for sequential appearance */
 }
 
 button {
@@ -83,6 +88,8 @@ button {
     overflow: hidden;
     transition: transform 0.5s;
     animation: popUp 1s ease-out forwards;
+    opacity: 0; /* Start hidden for animation */
+    animation-delay: 2s; /* Delay for sequential appearance */
 }
 
 button:hover {
@@ -109,11 +116,11 @@ button:hover::before {
 }
 
 @keyframes popUp {
-    0% {
-        transform: translateY(100%);
+    from {
+        transform: translateY(100px);
         opacity: 0;
     }
-    100% {
+    to {
         transform: translateY(0);
         opacity: 1;
     }
