@@ -27,7 +27,7 @@ Please do not resell our bot, doing that will result in a lawsuit and legal acti
 # credits
 
 --Coded by--
-  layzicoder
+  layzicoder,
   agh
 
 
