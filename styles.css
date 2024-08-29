@@ -25,6 +25,7 @@ body {
     margin-bottom: 20px;
     border: 5px solid transparent;
     transition: border-color 0.5s, transform 0.5s;
+    object-fit: cover; /* Ensures the image fits within the circle */
 }
 
 #logo:hover {
@@ -34,13 +35,14 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 36px; /* Adjusted size */
     margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 16px; /* Adjusted size */
     margin-bottom: 30px;
+    color: gray; /* Changed color to gray */
 }
 
 button {
