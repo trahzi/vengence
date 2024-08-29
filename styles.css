@@ -1,3 +1,41 @@
-document.getElementById("myButton").addEventListener("click", function() {
-    window.location.href = "https://discord.com/oauth2/authorize?client_id=1275907615875924068";
-});
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#myButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#myButton:hover {
+    background-color: #218838;
+}
