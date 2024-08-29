@@ -1,3 +1,3 @@
 document.getElementById("myButton").addEventListener("click", function() {
-    document.getElementById("message").textContent = "Hello! You clicked the button!";
+    window.location.href = "https://discord.com/oauth2/authorize?client_id=1275907615875924068";
 });
